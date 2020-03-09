@@ -10,6 +10,7 @@ const routes: Routes = [
     { path: "featured", loadChildren: () => import("~/app/featured/featured.module").then((m) => m.FeaturedModule) },
     { path: "settings", loadChildren: () => import("~/app/settings/settings.module").then((m) => m.SettingsModule) },
     { path: "login", loadChildren: () => import("~/app/login/login.module").then((m) => m.LoginModule) },
+    { path: "store-picker", loadChildren: () => import("./store-picker/store-picker.module").then((m) => m.StorePickerModule) },
     { path: "goshop", loadChildren: () => import("~/app/go-shopping/go-shopping.module").then((m) => m.GoShoppingModule) }
 ];
 

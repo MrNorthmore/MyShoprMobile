@@ -40,6 +40,11 @@
                     <Label col="1" text="Login" class="p-r-10"></Label>
                 </GridLayout>
 
+                <GridLayout columns="auto, *" class="nt-drawer__list-item" [class.-selected]="isComponentSelected('/store-picker')" (tap)="onNavItemTap('/store-picker')">
+                    <Label col="0" text="&#xf015;" class="nt-icon fas"></Label>
+                    <Label col="1" text="Select Store" class="p-r-10"></Label>
+                </GridLayout>
+
                 <GridLayout columns="auto, *" class="nt-drawer__list-item" [class.-selected]="isComponentSelected('/goshop')" (tap)="onNavItemTap('/goshop')">
                     <Label col="0" text="&#xf015;" class="nt-icon fas"></Label>
                     <Label col="1" text="Go Shopping" class="p-r-10"></Label>
